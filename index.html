@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <title>GreenPulse Auto Irrigation</title>
     <style>
-        body {
-            background-color: #fff;
-            color: #000;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+    position: relative;
+    background-image: url("green leaf.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 50% white overlay */
+    z-index: -1;
+}
+
         header {
             background-color: #f1f1f1;
             text-align: center;
