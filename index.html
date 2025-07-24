@@ -1,93 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenPulse Auto Irrigation</title>
-    <style>
-        body {
-            position: relative;
-            /* Make sure 'greenleaf.jpg' is in the same folder as this HTML file */
-            background-image: url("greenleaf.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenPulse Auto Irrigation</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.5); /* 50% white overlay */
-            z-index: -1;
-        }
+    body {
+      position: relative;
+      background-image: url("greenleaf.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; /* Helps on some mobile browsers */
+      -webkit-background-size: cover; /* Safari compatibility */
+    }
 
-        header {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 20px;
-        }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      rgba(255, 255, 255, 0.5);
+      z-index: -1;
+    }
 
-        header img {
-            max-width: 300px;
-            height: auto;
-        }
+    header {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+    }
 
-        nav {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
+    header img {
+      max-width: 300px;
+      height: auto;
+    }
 
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    nav {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
 
-        main {
-            padding: 40px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .contact {
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <!-- Ensure 'UploadedImage22.jpg' is also in the same folder -->
-        <img src="UploadedImage22.jpg" alt="GreenPulse Logo">
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Solutions</a>
-        <a href="#">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <h1>Welcome to GreenPulse Auto Irrigation</h1>
-        <p>We provide intelligent, sustainable irrigation solutions for modern agriculture.</p>
-        <div class="contact" id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@greenpulse.at">info@greenpulse.at</a></p>
-        </div>
-    </main>
-    <footer>
-        &copy; 2025 GreenPulse. All rights reserved.
-    </footer>
-</body>
-</html>
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration:
