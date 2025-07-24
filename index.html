@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenPulse Auto Irrigation</title>
     <style>
-        body {
-            position: relative;
-            /* Make sure 'greenleaf.jpg' is in the same folder as this HTML file */
-            background-image: url("greenleaf.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+       
+    body {
+      position: relative;
+      background-image: url("greenleaf.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; /* Helps on some mobile browsers */
+      -webkit-background-size: cover; /* Safari compatibility */
+    }
+
 
         body::before {
             content: "";
